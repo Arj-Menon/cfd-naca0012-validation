@@ -1,0 +1,87 @@
+# ─── ANSYS Fluent ─────────────────────────────────────────────────────────────
+# Case and data files — often several GB each; never commit
+*.cas
+*.cas.gz
+*.dat
+*.dat.gz
+
+# Fluent journal and transcript files (auto-generated)
+*.jou
+*.trn
+
+# Fluent residuals and run logs
+*.out
+fluent.log*
+
+# ANSYS Workbench project files and scratch directories
+*.wbpj
+*.wbpz
+dp0/
+user_files/
+progress_files/
+*.lock
+
+# ANSYS Meshing / ICEM CFD
+*.msh
+*.cmdb
+*.agdb
+*.fmd
+
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# ─── OS junk ──────────────────────────────────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ─── Editor temp files ────────────────────────────────────────────────────────
+# VS Code
+.vscode/
+
+# JetBrains (PyCharm, etc.)
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+\#*\#
+.\#*
+
+# ─── Data and output files ────────────────────────────────────────────────────
+# Keep /data and /figures tracked, but ignore large intermediates if needed
+# Uncomment lines below if your raw exports grow too large for GitHub (>50 MB):
+# data/*.csv
+# data/*.xlsx
+
+# Paraview state files
+*.pvsm
